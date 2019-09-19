@@ -19,22 +19,40 @@
     </properties>
 
     <dependencies>
+        <!--web 项目-springboot 默认导入项目web项目的相应依赖，包括mvc和内置的tomcat-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!--  连接mysql数据-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
+
+        <!-- 对于项目   测试-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!--对于alibab -fastjson的引用-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.37</version>
+        </dependency>
+
+        <!--对于项目使用线程-依赖包-->
+
+
     </dependencies>
+
+
+
 
     <build>
         <plugins>
