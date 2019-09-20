@@ -3,7 +3,7 @@ package com.lx.demo.constant;
 public enum DemoClassEnums {
 
     DEMO_01_EUM("01","第一个枚举","这是第一个例子使用的枚举"),
-    DEMO_02_EUM("01","第一个枚举","这是第一个例子使用的枚举");
+    DEMO_02_EUM("02","第二个枚举","这是第二个例子使用的枚举");
 
 
     private String code;
