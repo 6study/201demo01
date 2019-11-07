@@ -1,2 +1,29 @@
 server:
   port: 8089
+
+
+
+#对于日志级别以及输出位置给出定义
+#logging:
+#  file: D：/item/git-item/203/log.log   项目对应的路径
+#  level:
+#    org:
+#      springframework:
+#        web: debug
+
+# mysql
+spring:
+  datasource:
+    name: test
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://114.67.79.68:3306/lx_db?useUnicode=true&characterEncoding=UTF8
+    username: root
+    password: WangWeiFeng0000..
+    # 注意注意
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.lx.demo.model
+    # 驼峰命名规范 如：数据库字段是  order_id 那么 实体字段就要写成 orderId
+  configuration:
+    map-underscore-to-camel-case: true
+

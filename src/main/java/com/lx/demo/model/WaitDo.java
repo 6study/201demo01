@@ -1,10 +1,13 @@
 package com.lx.demo.model;
 
+import java.io.Serializable;
+
 /**
  * 代待办
  */
-public class waitDo {
+public class WaitDo extends CommonHead implements Serializable {
 
+    private static final long serialVersionUID = 8275314225932906195L;
     private String item; //主题
 
     private String description;//描述

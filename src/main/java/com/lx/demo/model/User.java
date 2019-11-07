@@ -1,19 +1,24 @@
 package com.lx.demo.model;
 
+import com.alibaba.fastjson.annotation.JSONCreator;
+import com.alibaba.fastjson.annotation.JSONField;
+
 import java.io.Serializable;
 
 /**
  * 用户
  */
-public class User  implements Serializable  {
+public class User  extends CommonHead implements Serializable  {
 
     /**
      * 唯一性id
      */
     private static final long serialVersionUID = -2098558948040661869L;
 
+    @JSONField(name="username")
     private String userName;//用户名
 
+    @JSONField(name="password")
     private String password;//密码
 
     private String sex;//性别

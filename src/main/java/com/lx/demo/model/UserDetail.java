@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * 用户明细
  */
-public class UserDetail implements Serializable {
+public class UserDetail extends CommonHead implements Serializable  {
 
     private static final long serialVersionUID = -2506886048188381095L;
 
