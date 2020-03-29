@@ -1,5 +1,8 @@
 package com.lx.demo.controller.exercise;
 
+/**
+ * 继承
+ */
 public class Sub extends Base {
     private static String baseName = "sub";
 

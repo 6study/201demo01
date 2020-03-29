@@ -1,5 +1,8 @@
 package com.lx.demo.controller.exercise;
 
+/**
+ * 方法使用 有效顺序
+ */
 class   StaticStuff
  { 
                   static  int  x=10;

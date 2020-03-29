@@ -8,7 +8,10 @@ import java.io.FileWriter;
 
 /**
  * FileChange
- *
+ * 题干
+ * 请对D盘下A.txt文件中的每行数据做升序排列后写入B.txt文件中；
+ * A.txt文件描述：通过“|”拼接的多行数字，
+ * 例如：“10|14|5|10|6|3”有多行。
  * @author LiuXue on 2020/3/15
  */
 public class FileChange {

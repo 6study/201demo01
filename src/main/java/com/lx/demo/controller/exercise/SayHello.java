@@ -1,5 +1,8 @@
 package com.lx.demo.controller.exercise;
 
+/**
+ * 内部函数 与 外部方法
+ */
 public class SayHello {
     
     public static void say(String name){
