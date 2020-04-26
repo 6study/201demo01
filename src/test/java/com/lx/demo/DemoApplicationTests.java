@@ -9,9 +9,12 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.awt.*;
+import java.io.File;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
@@ -62,11 +65,71 @@ public class DemoApplicationTests {
         System.out.println("  对于pdf文件进行更改为jpg文件时候，结果为：" + a);
      }
 
-     @Test
+    /**
+     * 执行写文件
+     */
+    @Test
     public void easyErite(){
 
          fileUseController.writeIntoFile01();
      }
+
+
+    /**
+     * 获取文件的name
+     */
+    @Test
+    public void getFileName(){
+        String pdffilepath = "D:/文件处理/影像文件处理/tar/BOSJYIM-20190806160551252663601-APPLY20190806/idcard-02.pdf";
+        File file =  new File(pdffilepath);
+        String a= file.getAbsolutePath();
+        String b = file.getName();
+        String c = file.getPath();
+        Boolean d = file.exists();
+        File  e = file.getAbsoluteFile();
+        System.out.println(a+"\n"+b+"\n"+c+"\n"+d+"\n"+e);
+    }
+
+    /**
+     * 读取txt文件，从第二行开始读取
+     */
+    @Test
+    public void readTxtFile(){
+        fileUseController.readTxtFile("C:/Users/94018/Desktop/123.txt");
+
+    }
+
+    @Test
+    public void createFile() throws IOException {
+        File file = new File("D:/文件处理/影像文件处理/简单文件/3.txt");
+        file.createNewFile();
+    }
+
+
+    @Test
+    public void makeMiFileTest(){
+        fileUseController.makeEncryptionFile();
+    }
+
+    @Test
+    public void makeDecipHeringFileTest(){
+        fileUseController.makeDecipheringfile();
+    }
+
+
+
+    @Test
+    public void aa (){
+
+//        int a =(11+3*8)/4%3 ;
+//        int b = a;
+
+          int  x=15;
+               x/=3;
+
+               int b = x;
+               int c = b;
+    }
 
 
 
