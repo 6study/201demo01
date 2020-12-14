@@ -107,11 +107,12 @@ public class FileUseController {
      */
     public void makeEncryptionFile(){
 
-        File file = new File ("D:\\文件处理\\影像文件处理\\文件加密\\待加密文件夹");
-        File file1 = new File ("D:\\文件处理\\影像文件处理\\文件加密\\加密后文件夹");
+//        File file = new File ("D:\\文件处理\\影像文件处理\\文件加密\\待加密文件夹");
+        File file = new File ("D:/迅雷下载/ABCD/1JL1VBnA.mp4");
+        File file1 = new File ("D:/文件处理/影像文件处理/文件加密/加密后文件夹");
 
         try{
-            EncryDecryUtils.makeZip(file.getAbsolutePath(),file1.getAbsolutePath(),"123.zip");
+            EncryDecryUtils.makeZip(file.getAbsolutePath(),file1.getAbsolutePath(),"迅雷备份002.zip");
         }catch (IOException e) {
             logger.error("对于文件进行加密的时候异常，异常原因为：【{}】",e);
         }
@@ -151,8 +152,20 @@ public class FileUseController {
             logger.info(file.getParent());
             logger.info(String.valueOf(file.exists()));
         }
+    }
 
 
+    public static void main(String[] args) {
+
+
+        try{
+//            new RuntimeException("11");
+//            int i = 1/0;
+
+        }
+        catch (Exception e){
+
+        }
     }
 
 }

@@ -8,6 +8,7 @@ import java.io.Serializable;
 public class Image extends CommonHead implements Serializable {
 
     private static final long serialVersionUID = -6308477865306117105L;
+
     private String userNo;//用户no ---用户后续关联用户个人头像
 
     private String imagename;//图片名

@@ -8,6 +8,7 @@ import java.io.Serializable;
 public class Power extends CommonHead implements Serializable {
 
     private static final long serialVersionUID = 4017695828888771481L;
+
     private String userNo;//用户no
 
     private String pageNo;//pageno

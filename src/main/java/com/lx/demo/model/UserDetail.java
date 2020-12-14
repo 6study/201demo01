@@ -19,6 +19,8 @@ public class UserDetail extends CommonHead implements Serializable  {
 
     private  String userNo;//用户账户
 
+    private String userPic;//用户pic 图片
+
     public String getAddress() {
         return address;
     }

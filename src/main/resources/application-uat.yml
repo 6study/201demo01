@@ -5,7 +5,8 @@ server:
 
 #对于日志级别以及输出位置给出定义  -- 随时间变化  -给出对应的获取
 logging:
-  file: logs/log.log   项目对应的路径
+  file: logs/demolog.log
+#  项目对应的路径
   level:
     org:
       springframework:
