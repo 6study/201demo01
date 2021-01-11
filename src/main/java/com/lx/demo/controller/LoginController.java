@@ -36,6 +36,7 @@ public class LoginController {
         logger.info("对于登录信息进行打印校验");
         logger.info(user.getUserName());
         logger.info(user.getPassword());
+        //对于输入的密码做校验，特殊字符，类型和长度 - 防止sql注入
         List<User> list = userDao.findByUsernameAndPassword(user.getUserName(),user.getPassword());
         if(null != list && null != list.get(0)){
             loginProcessRes.setResProcessStatus(DemoClassConstant.SUCCCESS);
